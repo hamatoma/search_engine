@@ -19,7 +19,7 @@ class ExampleClass extends
 '''
       .split('\n');
   group('DartParser-Strings+comments', () {
-    test('dummy', (){
+    test('dummy', () {
       expect(lines, isNotEmpty);
     });
     test('single line comment', () {

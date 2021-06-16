@@ -1,7 +1,7 @@
 name: search_engine
 description: A text engine for inserting/deleting text content, and a search engine.
 version: 0.1.0
-# homepage: https://www.example.com
+homepage: https://github.com/hamatoma/search_engine
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
@@ -10,7 +10,7 @@ dependencies:
   args: ^2.1.0
   path: ^1.8.0
   http: ^0.13.0
-  dart_bones: "^1.1.1"
+  dart_bones: ^1.1.1
   #  path: ../../dart/dart_bones
 
 dev_dependencies:

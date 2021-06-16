@@ -440,7 +440,8 @@ void main() {
     test('searchReverse-RegExpSearcher', () {
       resetEngine(engine);
       final searcher = RegExpSearcher(engine, pattern: '(.)[12]+');
-      expect(engine.searchReverse(searcher, startPosition: Position(4,0)), isTrue);
+      expect(engine.searchReverse(searcher, startPosition: Position(4, 0)),
+          isTrue);
       expect(engine.lastMatch.type, LastMatchType.regularExpr);
       expect(engine.lastMatch.regExpMatch, isNotNull);
       expect(engine.lastMatch.group(0), ' 12');
@@ -461,7 +462,8 @@ void main() {
     test('searchReverse-StringSearcher', () {
       resetEngine(engine);
       final searcher = StringSearcher(engine, '12');
-      expect(engine.searchReverse(searcher, startPosition: Position(4, 0)), isTrue);
+      expect(engine.searchReverse(searcher, startPosition: Position(4, 0)),
+          isTrue);
       expect(engine.lastMatch.type, LastMatchType.string);
       expect(engine.lastMatch.stringMatch, searcher.toSearch);
       expect(engine.lastMatch.group(0), searcher.toSearch);

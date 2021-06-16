@@ -1,5 +1,5 @@
 import 'package:dart_bones/dart_bones.dart';
-import 'package:search_engine/search_engine.dart';
+import '../lib/search_engine.dart';
 
 /// Prints some statistics about all classes from a file given from program arguments.
 void main(List<String> args) {

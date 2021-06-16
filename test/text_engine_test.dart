@@ -358,7 +358,7 @@ def''', logger);
     });
     test('given position', () {
       final engine = TextEngine('123\n45\n67\n89'.split('\n'), logger);
-      final position = Position(2,3, engine);
+      final position = Position(2, 3, engine);
       expect(position.isEndOfText(), isFalse);
       position.endOfText();
       expect(position.isEndOfText(), isTrue);
